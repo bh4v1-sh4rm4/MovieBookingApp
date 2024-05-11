@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="BxK-3r-eWl" customClass="CardCollectionViewCell" customModule="MovieBookingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L7g-ON-0sn">
+                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aV-TQ-GOh">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s3V-aI-OG7">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="s3V-aI-OG7" secondAttribute="trailing" id="5BS-HU-4dg"/>
+                            <constraint firstItem="s3V-aI-OG7" firstAttribute="leading" secondItem="9aV-TQ-GOh" secondAttribute="leading" id="Jvs-ZA-peC"/>
+                            <constraint firstAttribute="bottom" secondItem="s3V-aI-OG7" secondAttribute="bottom" id="TrB-XL-cy8"/>
+                            <constraint firstItem="s3V-aI-OG7" firstAttribute="top" secondItem="9aV-TQ-GOh" secondAttribute="top" id="get-wO-K1t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9aV-TQ-GOh" secondAttribute="trailing" id="IWP-y6-OCZ"/>
+                    <constraint firstAttribute="bottom" secondItem="9aV-TQ-GOh" secondAttribute="bottom" id="Zbe-a3-dcm"/>
+                    <constraint firstItem="9aV-TQ-GOh" firstAttribute="top" secondItem="L7g-ON-0sn" secondAttribute="top" id="jie-vl-9W6"/>
+                    <constraint firstItem="9aV-TQ-GOh" firstAttribute="leading" secondItem="L7g-ON-0sn" secondAttribute="leading" id="zWj-XF-I4e"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="64" height="64"/>
+            <connections>
+                <outlet property="cardImageView" destination="s3V-aI-OG7" id="Ux9-4j-Kmm"/>
+            </connections>
+            <point key="canvasLocation" x="134.35114503816794" y="-53.521126760563384"/>
+        </collectionViewCell>
+    </objects>
+</document>
